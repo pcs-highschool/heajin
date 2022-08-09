@@ -5,8 +5,10 @@
     </div>
     <div class="storeInfoBox">
       <div class="storeInfo">
-        <span class="storeName">{{StoreName}}</span>
-        <span class="storeDistance">{{Distance}}m</span>
+        <div class="firstInfo">
+          <span class="storeName">{{StoreName}}</span>
+          <span class="storeDistance">{{Distance}}m</span>
+        </div>
         <span class="storeStar">4.2</span>
         <span class="storeKategorie">{{Catagory}}</span>
       </div>
@@ -62,6 +64,10 @@ export default {
     height: 25px;
 }
 
+.firstInfo{
+  display: block;
+}
+
 .storeInfoBox {
     float: left;
     margin-left: 33px;
@@ -83,7 +89,7 @@ export default {
     font-weight: 600;
     font-size: 20px;
 
-    margin-right: 15px;
+    margin-right: 3px;
 }
 
 .storeDistance {
@@ -92,7 +98,7 @@ export default {
     font-weight: normal;
     font-size: 12px;
     letter-spacing: -0.3px;
-    margin-right: 20px;
+    margin-right: 10px;
     
     color: #FF0000;
 }
@@ -116,6 +122,7 @@ export default {
     height: 15px;
     display:inline-block;
 
+    margin-top: 7px;
     margin-right: 8px;
 }
 
